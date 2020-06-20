@@ -1,0 +1,34 @@
+@mixin font($f-name, $f-style, $f-weight, $f-url, $f-format) {
+
+  @font-face {
+    font-family: $f-name;
+    font-style: $f-style;
+    font-weight: $f-weight;
+    src: url($f-url) format($f-format);
+  }
+}
+
+@include font('futurapt-300', lighter, 300, 'http://artemknutov.tech/fonts/FuturaPT_Light.eot', 'eot');
+@include font('futurapt-300', lighter, 300, 'http://artemknutov.tech/fonts/FuturaPT_Light.ttf', 'ttf');
+@include font('futurapt-300', lighter, 300, 'http://artemknutov.tech/fonts/FuturaPT_Light.woff', 'woff');
+@include font('futurapt-500', Medium, 500, 'http://artemknutov.tech/fonts/FuturaPT_Medium.eot', 'eot');
+@include font('futurapt-500', Medium, 500, 'http://artemknutov.tech/fonts/FuturaPT_Medium.ttf', 'ttf');
+@include font('futurapt-500', Medium, 500, 'http://artemknutov.tech/fonts/FuturaPT_Medium.woff', 'woff');
+
+ /*
+ 100 - Thin (Hairline)
+ 200 - Extra Light (Ultra Light)
+ 300 - Light (Book)
+ 400 - Normal (Regular)
+ 500 - Medium
+ 600 - Semi Bold (Demi Bold)
+ 700 - Bold
+ 800 - Extra Bold (Ultra Bold)
+ 900 - Black (Heavy)
+
+ @font-face
+ 	font-family: 'raleway-example'
+ 	src: url('../fonts/RalewayBold.woff') format('woff')
+ 	font-weight: bold
+ 	*/
+
