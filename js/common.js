@@ -1,5 +1,4 @@
 "use strict";
-
 /*number of passengers*/
 const info = () => {
     let active = document.querySelectorAll('.active');
@@ -8,7 +7,7 @@ const info = () => {
 };
 
 const request = new XMLHttpRequest();
-const url = "http://artemknutov.tech/js/data.json";
+const url = "http://artemknutov.tech/search/js/data.json";
 request.open('GET', url);
 request.setRequestHeader('Content-Type', 'application/x-www-form-url');
 request.addEventListener("readystatechange", () => {
